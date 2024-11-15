@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Suite" verbose="5">
+<parameter name="browser" value="Edge"></parameter>
+<parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+<parameter name="username" value="DemoSalesManager"> </parameter>
+<parameter name="password" value="crmsfa"> </parameter>
+
+  <test name="Test1">
+    <classes>
+      <class name="marathon3StaticParameterization.CreateLead2"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+    <classes>
+      <class name="marathon3StaticParameterization.EditLead"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Test3">
+    <classes>
+      <class name="marathon3StaticParameterization.DeleteLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
